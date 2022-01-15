@@ -21,7 +21,9 @@ JVM에선 자바와 기계어 사이의 중간 언어인 자바 바이트코드�
 
 ### JVM 구조
 
-![JVM 구조](https://d2.naver.com/content/images/2015/06/helloworld-1230-1.png)
+![JVM_구조](https://d2.naver.com/content/images/2015/06/helloworld-1230-1.png)
+
+![jpg_2](./img/2.JPG)
 
 클래스 로더가 컴파일된 자바 바이트코드를 런타임 데이터 영역에 로드하고, 실행 엔진이 자바 바이트코드를 실행한다.
 
@@ -41,7 +43,7 @@ JVM에선 자바와 기계어 사이의 중간 언어인 자바 바이트코드�
 각 클래스 로더는 로드된 클래스들을 보관하는 네임스페이스를 갖는다. 클래스를 로드할 때 이미 로드된 클래스인지 확인하기 위해서 네임스페이스 보관된 FQCN을 기준으로 클래스를 찾는다.
 비록 같더라도 네임스페이스가 다르면 다른 클래스로 간주된다.
 
-![클래스 로더 모델](https://d2.naver.com/content/images/2015/06/helloworld-1230-2.png)
+![클래스_로더_모델](https://d2.naver.com/content/images/2015/06/helloworld-1230-2.png)
 
 - 부트스트랩 클래스 로더 : JVM을 기동할 때 생성되며, Object 클래스들을 비롯하여 자바 API들을 로드한다. 다른 클래스 로더와 달리 자바가 아니라 네이티브 코드로 구현되어 있다.
 
