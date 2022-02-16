@@ -142,6 +142,7 @@ G1GC에도 마찬가지로 Minor GC가 존재하며, 과정에서 살아남은 �
 ![G1GC 과정](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbWj6yv%2FbtqMqBft2cj%2FT69AhDZYGwLomksxpLb82k%2Fimg.png)
 
  initial Mark : Old 지역에 객체들이 참조하는 Survival 지역을 찾는다.(STW)
+ 
  Root Region Scan : 위에서 찾은 Servival 객체들에 대한 스캔 작업 실시
  
  Concurrent Mark : 전체 Heap의 scan을 실시하고, GC 대상 객체가 발견되지 않은 Region은 이 후 단계를 제외한다.
