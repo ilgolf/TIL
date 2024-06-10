@@ -25,10 +25,12 @@ Svelte에서도 반응형 구문을 제공해준다. $ 구문으로 표현되며
 	}
 	$: doubled = count * 2;
 </script>
+
 <button on:click={increment}>
 	Clicked {count}
 	{count === 1 ? 'time' : 'times'}
 </button>
+
 <h2>클릭 횟수 * 2</h2>
 <p>{doubled}</p>
 ```
